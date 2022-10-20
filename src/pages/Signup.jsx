@@ -5,8 +5,10 @@ import { Selecter } from "../components/Selecter";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useState } from "react";
 
 export function Signup() {
+  const [loader, setLoader] = useState(false);
   const Signupschema = Yup.object().shape({
     firstName: Yup.string()
       .max(15, "Must be 15 characters or less")
@@ -48,6 +50,7 @@ export function Signup() {
           }}
           onSubmit={async (values) => {
             try {
+              setLoader(true);
               const response = await axios.post(
                 "https://productdemo.yogeshpendse.repl.co/enrolluser",
                 {
@@ -79,6 +82,7 @@ export function Signup() {
                 theme: "light",
               });
             } finally {
+              setLoader(false);
             }
           }}
         >
@@ -171,7 +175,10 @@ export function Signup() {
                   </span>
                 </div>
                 <button type="submit" className="sigin__button">
-                  Login
+                  Signup
+                  {loader && (
+                    <span className="spin__loader-new spin__rotate"></span>
+                  )}
                 </button>
               </div>
             </form>

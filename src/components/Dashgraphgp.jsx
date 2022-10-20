@@ -1,6 +1,7 @@
 import { Linegraph } from "./Linegraph";
 // import { Bargraph } from "./Bargraph";
 import { chartarray } from "../sampledata/data";
+import { Areagraph } from "./Areagraph";
 export function Dashgraphgp() {
   return (
     <div className="dashgraphs">
@@ -16,6 +17,12 @@ export function Dashgraphgp() {
           <Bargraph vizarray={chartarray} />
         </div>
       </div> */}
+      <div className="dashgraphlinecont">
+        <h2 className="dashgraph__header">Gas Purchase in CO2e</h2>
+        <div className="dashgraphline__cont">
+          <Areagraph vizarray={chartarray} />
+        </div>
+      </div>
     </div>
   );
 }

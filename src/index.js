@@ -1,7 +1,7 @@
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import { StrictMode } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Registrationprov } from "./contexts/Registrationprov";
@@ -24,21 +24,21 @@ const root = createRoot(rootElement);
 //   </StrictMode>
 // );
 root.render(
-  // <StrictMode>
-  <Authprov>
-    <Registrationprov>
-      <Router>
-        <Databoardprovider>
-          <Visualsprov>
-            <Navprov>
-              <App />
-            </Navprov>
-          </Visualsprov>
-        </Databoardprovider>
-      </Router>
-    </Registrationprov>
-  </Authprov>
-  // </StrictMode>
+  <StrictMode>
+    <Authprov>
+      <Registrationprov>
+        <Router>
+          <Databoardprovider>
+            <Visualsprov>
+              <Navprov>
+                <App />
+              </Navprov>
+            </Visualsprov>
+          </Databoardprovider>
+        </Router>
+      </Registrationprov>
+    </Authprov>
+  </StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

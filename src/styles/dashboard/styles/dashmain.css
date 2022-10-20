@@ -112,6 +112,7 @@
 .dashgraphs {
   display: flex;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.8rem;
   /* padding-left: 8rem; */
 }

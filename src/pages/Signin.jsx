@@ -95,7 +95,10 @@ export function Signin() {
                       </span>
                     </div>
                     <button type="submit" className="sigin__button">
-                      Login {loader && "Loading..."}
+                      Login
+                      {loader && (
+                        <span className="spin__loader-new spin__rotate"></span>
+                      )}
                     </button>
                   </div>
                 </Form>

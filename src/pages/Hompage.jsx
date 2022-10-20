@@ -6,6 +6,7 @@ import { Topbarv3 } from "../components/topbar/Topbarv3";
 import { Bargraphblock } from "../components/summary/Bargraphblock";
 import { Linegraphblock } from "../components/summary/Linegraphblock";
 import { chartarray } from "../sampledata/data";
+import { Areagraphblock } from "../components/summary/Areagraphblock";
 export function Hompage() {
   const { dateval, setDateval, enddateval, setEnddateval } = useVisuals();
   return (
@@ -69,6 +70,7 @@ export function Hompage() {
                   graphname={"Road Travel"}
                 />
                 <Linegraphblock vizarray={chartarray} graphname={"Air Cargo"} />
+                <Areagraphblock vizarray={chartarray} graphname={"Air Cargo"} />
                 <Bargraphblock vizarray={chartarray} graphname={"Road Cargo"} />
 
                 <Bargraphblock
@@ -79,6 +81,10 @@ export function Hompage() {
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
+                />
+                <Areagraphblock
+                  vizarray={chartarray}
+                  graphname={"Electricity"}
                 />
                 <Bargraphblock
                   vizarray={chartarray}
