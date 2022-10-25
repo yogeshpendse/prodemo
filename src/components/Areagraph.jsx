@@ -11,7 +11,8 @@ import { useVisuals } from "../contexts/Visualcontext";
 import { getmonthno } from "../functions/setmonthnum";
 
 export function Areagraph(params) {
-  const { vizarray } = params;
+  const { vizarray, colorvalue } = params;
+  const areafill = colorvalue ? colorvalue : "#8884d8";
   const { dateval, enddateval } = useVisuals();
   const monthno = Number(dateval.slice(5, 7));
   const vizx = [...vizarray].map((elem) => getmonthno(elem));
@@ -37,8 +38,8 @@ export function Areagraph(params) {
         <Area
           type="monotone"
           dataKey="emission"
-          stroke="#8884d8"
-          fill="#8884d8"
+          stroke={areafill}
+          fill={areafill}
         />
       </AreaChart>
     </ResponsiveContainer>

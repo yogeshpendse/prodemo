@@ -11,6 +11,8 @@ import {
 // import { getmonthno } from "../functions/setmonthnum";
 
 export function Scatterchartgraph(params) {
+  const { colorvalue } = params;
+  const scatterfill = colorvalue ? colorvalue : "#8884d8";
   //   const { vizarray } = params;
   //   const { dateval, enddateval } = useVisuals();
   //   const monthno = Number(dateval.slice(5, 7));
@@ -55,7 +57,7 @@ export function Scatterchartgraph(params) {
           unit="co2e"
         />
         <Tooltip cursor={{ strokeDasharray: "3 3" }} />
-        <Scatter name="emmision" data={data} fill="#8884d8" />
+        <Scatter name="emmision" data={data} fill={scatterfill} />
       </ScatterChart>
     </ResponsiveContainer>
   );

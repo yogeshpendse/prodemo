@@ -12,8 +12,10 @@ import { useVisuals } from "../contexts/Visualcontext";
 import { getmonthno } from "../functions/setmonthnum";
 // import { chart2data } from "../mockdata";
 export function Bargraph(params) {
-  const { vizarray } = params;
+  const { vizarray, colorvalue } = params;
   const { dateval, enddateval } = useVisuals();
+
+  const fillvalue = colorvalue ? colorvalue : "#fe7e7d";
   // dateval.slice(5, 7) dateval.slice(5, 7)
   const monthno = Number(dateval.slice(5, 7));
   const vizx = [...vizarray].map((elem) => getmonthno(elem));
@@ -71,7 +73,7 @@ export function Bargraph(params) {
           <Tooltip />
           <Legend />
           <XAxis dataKey="day" />
-          <Bar dataKey="emission" stackId="a" fill="#fe7e7d" barSize={20} />
+          <Bar dataKey="emission" stackId="a" fill={fillvalue} barSize={20} />
         </BarChart>
       </ResponsiveContainer>
     </>

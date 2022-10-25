@@ -12,11 +12,11 @@ export function Sidenavv3() {
           <div className="sidenavv3__logocont">
             <img
               className="sidenavv3__logoimg"
-              src="https://yt3.ggpht.com/ljUzWubPbvKCg3LwLc5nzYk76Mi5xW3raFUiRxQjIkGT90ntDKMTM2x8t2wf1yGZfGX0zZ-tsg=s900-c-k-c0x00ffffff-no-rj"
+              src="https://www.nutristar.in/static/media/header-logo.66d12587.svg"
               alt="sideimage"
             />
           </div>
-          <p className="sidenavv3__logopara">Brand</p>
+          <p className="sidenavv3__logopara">Nutristar</p>
         </div>
         <div className="sidenavv3__homemenu">
           <div

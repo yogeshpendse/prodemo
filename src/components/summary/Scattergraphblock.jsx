@@ -1,13 +1,13 @@
 import { Scatterchartgraph } from "../Scatterchart";
 
 export function Scattergraphblock(params) {
-  const { vizarray, graphname } = params;
+  const { vizarray, graphname, colorvalue } = params;
   return (
     <>
       <div className="dashgraphbarcont">
         <h2 className="dashgraph__header">{graphname} in CO2e</h2>
         <div className="dashgraphbar__cont">
-          <Scatterchartgraph vizarray={vizarray} />
+          <Scatterchartgraph vizarray={vizarray} colorvalue={colorvalue} />
         </div>
       </div>
     </>

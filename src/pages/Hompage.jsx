@@ -8,6 +8,7 @@ import { Linegraphblock } from "../components/summary/Linegraphblock";
 import { chartarray } from "../sampledata/data";
 import { Areagraphblock } from "../components/summary/Areagraphblock";
 import { Scattergraphblock } from "../components/summary/Scattergraphblock";
+import { color1, color2, color3 } from "../color";
 export function Hompage() {
   const { dateval, setDateval, enddateval, setEnddateval } = useVisuals();
   return (
@@ -65,51 +66,82 @@ export function Hompage() {
                 <Linegraphblock
                   vizarray={chartarray}
                   graphname={"Air Travel"}
+                  colorvalue={color1}
                 />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road Travel"}
+                  colorvalue={color1}
                 />
-                <Linegraphblock vizarray={chartarray} graphname={"Air Cargo"} />
-                <Areagraphblock vizarray={chartarray} graphname={"Air Cargo"} />
-                <Bargraphblock vizarray={chartarray} graphname={"Road Cargo"} />
+                <Linegraphblock
+                  vizarray={chartarray}
+                  graphname={"Air Cargo"}
+                  colorvalue={color1}
+                />
+                <Areagraphblock
+                  vizarray={chartarray}
+                  graphname={"Air Cargo"}
+                  colorvalue={color1}
+                />
+                <Bargraphblock
+                  vizarray={chartarray}
+                  graphname={"Road Cargo"}
+                  colorvalue={color1}
+                />
                 <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Road Cargo"}
+                  colorvalue={color1}
                 />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
+                  colorvalue={color1}
                 />
                 <Areagraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
+                  colorvalue={color1}
                 />
-                <Scattergraphblock vizarray={chartarray} graphname={"Fuel"} />
-                <Bargraphblock vizarray={chartarray} graphname={"Fuel"} />
+                <Scattergraphblock
+                  vizarray={chartarray}
+                  graphname={"Fuel"}
+                  colorvalue={color2}
+                />
+                <Bargraphblock
+                  vizarray={chartarray}
+                  graphname={"Fuel"}
+                  colorvalue={color2}
+                />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
+                  colorvalue={color1}
                 />
                 <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
+                  colorvalue={color1}
                 />
                 <Areagraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
+                  colorvalue={color1}
                 />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"(Scope 3) Fuel"}
+                  colorvalue={color3}
                 />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"(Scope 3) Electricity"}
+                  colorvalue={color3}
                 />
                 <Linegraphblock
                   vizarray={chartarray}
                   graphname={"Gas Purchase"}
+                  colorvalue={color2}
                 />
               </div>
             </div>

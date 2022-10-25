@@ -11,7 +11,8 @@ import {
 import { useVisuals } from "../contexts/Visualcontext";
 import { getmonthno } from "../functions/setmonthnum";
 export function Linegraph(params) {
-  const { vizarray } = params;
+  const { vizarray, colorvalue } = params;
+  const strokeval = colorvalue ? colorvalue : "#4d7cfe";
   const { dateval, enddateval } = useVisuals();
   const monthno = Number(dateval.slice(5, 7));
   const vizx = [...vizarray].map((elem) => getmonthno(elem));
@@ -50,7 +51,7 @@ export function Linegraph(params) {
             }}
             dataKey="month"
           />
-          <Line type="monotone" dataKey="emission" stroke="#4d7cfe" />
+          <Line type="monotone" dataKey="emission" stroke={strokeval} />
         </LineChart>
       </ResponsiveContainer>
     </>
