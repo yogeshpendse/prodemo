@@ -7,6 +7,7 @@ import { Bargraphblock } from "../components/summary/Bargraphblock";
 import { Linegraphblock } from "../components/summary/Linegraphblock";
 import { chartarray } from "../sampledata/data";
 import { Areagraphblock } from "../components/summary/Areagraphblock";
+import { Scattergraphblock } from "../components/summary/Scattergraphblock";
 export function Hompage() {
   const { dateval, setDateval, enddateval, setEnddateval } = useVisuals();
   return (
@@ -72,13 +73,25 @@ export function Hompage() {
                 <Linegraphblock vizarray={chartarray} graphname={"Air Cargo"} />
                 <Areagraphblock vizarray={chartarray} graphname={"Air Cargo"} />
                 <Bargraphblock vizarray={chartarray} graphname={"Road Cargo"} />
-
+                <Scattergraphblock
+                  vizarray={chartarray}
+                  graphname={"Road Cargo"}
+                />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
                 />
+                <Areagraphblock
+                  vizarray={chartarray}
+                  graphname={"Electricity"}
+                />
+                <Scattergraphblock vizarray={chartarray} graphname={"Fuel"} />
                 <Bargraphblock vizarray={chartarray} graphname={"Fuel"} />
                 <Bargraphblock
+                  vizarray={chartarray}
+                  graphname={"Road commute"}
+                />
+                <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
                 />

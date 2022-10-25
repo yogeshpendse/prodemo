@@ -13,7 +13,6 @@ import { getmonthno } from "../functions/setmonthnum";
 export function Areagraph(params) {
   const { vizarray } = params;
   const { dateval, enddateval } = useVisuals();
-  // dateval.slice(5, 7) dateval.slice(5, 7)
   const monthno = Number(dateval.slice(5, 7));
   const vizx = [...vizarray].map((elem) => getmonthno(elem));
   const ju = vizx.findIndex((elem) => elem.monthno === monthno);
