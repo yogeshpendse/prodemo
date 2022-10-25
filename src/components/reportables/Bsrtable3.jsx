@@ -1,5 +1,5 @@
 export function Bsrtable3(params) {
-  const { reportdata } = params;
+  // const { reportdata } = params;
   return (
     <div>
       <div className="bsr_table_details">
@@ -22,8 +22,8 @@ export function Bsrtable3(params) {
               HFCs, PFCs, SF6, NF3, if available)
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">{reportdata?.scope1?.toFixed(1)}</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">5000</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
@@ -31,16 +31,16 @@ export function Bsrtable3(params) {
               HFCs, PFCs, SF6, NF3, if available)
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">{reportdata?.scope2}</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">5000</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total Scope 1 and Scope 2 emissions per rupee of turnover
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">5000</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
@@ -48,8 +48,8 @@ export function Bsrtable3(params) {
               relevant metric may be selected by the entity
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">5000</td>
+            <td className="bsr_td">5000</td>
           </tr>
         </tbody>
       </table>

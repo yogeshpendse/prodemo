@@ -10,52 +10,52 @@ export function Bsrtable2() {
           <tr className="bsr_tr">
             <th className="bsr_th">Parameter</th>
             <th className="bsr_th">Please specify unit</th>
-            <th className="bsr_th">FY _____ (Current Financial Year)</th>
-            <th className="bsr_th">FY ______ (Previous Financial Year)</th>
+            <th className="bsr_th">FY 2022 (Current Financial Year)</th>
+            <th className="bsr_th">FY 2021 (Previous Financial Year)</th>
           </tr>
         </thead>
         <tbody className="bsr_body">
           <tr className="bsr_tr">
             <td className="bsr_td">NOx</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4000</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">SOx</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">SOx</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Particulate matter (PM)</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Volatile organic compounds (VOC)</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Hazardous air pollutants (HAP)</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Others - please specify</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
-            <td className="bsr_td">NA</td>
+            <td className="bsr_td">Units</td>
+            <td className="bsr_td">4500</td>
+            <td className="bsr_td">5000</td>
           </tr>
           {/* Particulate matter
 (PM) */}
