@@ -18,44 +18,44 @@ export function Bsrtable2() {
           <tr className="bsr_tr">
             <td className="bsr_td">NOx</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">400</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">SOx</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">450</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">SOx</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">750</td>
+            <td className="bsr_td">800</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Particulate matter (PM)</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">650</td>
+            <td className="bsr_td">800</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Volatile organic compounds (VOC)</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">750</td>
+            <td className="bsr_td">800</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Hazardous air pollutants (HAP)</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">750</td>
+            <td className="bsr_td">800</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Others - please specify</td>
             <td className="bsr_td">Units</td>
-            <td className="bsr_td">4500</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">900</td>
+            <td className="bsr_td">700</td>
           </tr>
           {/* Particulate matter
 (PM) */}

@@ -21,40 +21,40 @@ export function Bsrtable4() {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Plastic waste (A)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">685</td>
+            <td className="bsr_td">782</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">E-waste (B)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">455</td>
+            <td className="bsr_td">455</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Bio-medical waste (C)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Construction and demolition waste (D)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Battery waste (E)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Radioactive waste (F)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Other Hazardous waste. Please specify, if any. (G)
             </td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
@@ -62,13 +62,13 @@ export function Bsrtable4() {
               any.(Break-up by composition i.e. by materials relevant to the
               sector)
             </td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total (A+B + C + D + E + F + G + H)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="full_colspan" colSpan="3">
@@ -84,23 +84,23 @@ export function Bsrtable4() {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(i) Recycled</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(ii) Re-used</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(iii) Other recovery operations</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="full_colspan" colSpan="3">
@@ -109,23 +109,23 @@ export function Bsrtable4() {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(i) Incineration</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(ii) Landfilling</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(ii) Landfilling</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">(iii) Other disposal operations</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">500</td>
           </tr>
         </tbody>
       </table>

@@ -22,8 +22,8 @@ export function Bsrtable3(params) {
               HFCs, PFCs, SF6, NF3, if available)
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">780</td>
+            <td className="bsr_td">650</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
@@ -31,16 +31,16 @@ export function Bsrtable3(params) {
               HFCs, PFCs, SF6, NF3, if available)
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">500</td>
+            <td className="bsr_td">300</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total Scope 1 and Scope 2 emissions per rupee of turnover
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">800</td>
+            <td className="bsr_td">455</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
@@ -48,8 +48,8 @@ export function Bsrtable3(params) {
               relevant metric may be selected by the entity
             </td>
             <td className="bsr_td">Metric tonnes of CO2 equivalent</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">900</td>
+            <td className="bsr_td">400</td>
           </tr>
         </tbody>
       </table>

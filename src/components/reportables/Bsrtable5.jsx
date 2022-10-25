@@ -1,5 +1,4 @@
-export function Bsrtable5(params) {
-  const { reportdata } = params;
+export function Bsrtable5() {
   return (
     <div>
       <div className="bsr_table_details">
@@ -22,20 +21,20 @@ export function Bsrtable5(params) {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total electricity consumption (A)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">650</td>
+            <td className="bsr_td">450</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total fuel consumption (B)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">850</td>
+            <td className="bsr_td">700</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total energy consumed from renewable so0urces (A+B+C)
             </td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">900</td>
+            <td className="bsr_td">450</td>
           </tr>
           <tr className="bsr_tr">
             <td colSpan={3} className="full_colspan">
@@ -44,27 +43,27 @@ export function Bsrtable5(params) {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total electricity consumption (D)</td>
-            <td className="bsr_td">{reportdata.totalElectricityUsage}</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">680</td>
+            <td className="bsr_td">600</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total fuel consumption (E)</td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">710</td>
+            <td className="bsr_td">680</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Energy consumption through other sources (F)
             </td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">800</td>
+            <td className="bsr_td">600</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total energy consumed from non-renewable sources (D+E+F)
             </td>
-            <td className="bsr_td">5000</td>
-            <td className="bsr_td">5000</td>
+            <td className="bsr_td">700</td>
+            <td className="bsr_td">400</td>
           </tr>
         </tbody>
       </table>
