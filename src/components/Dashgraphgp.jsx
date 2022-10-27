@@ -3,6 +3,7 @@ import { Linegraph } from "./Linegraph";
 import { chartarray } from "../sampledata/data";
 import { Areagraph } from "./Areagraph";
 import { color3 } from "../color";
+import { Piegraph } from "./Piegraph";
 export function Dashgraphgp() {
   return (
     <div className="dashgraphs">
@@ -18,6 +19,12 @@ export function Dashgraphgp() {
           <Bargraph vizarray={chartarray} />
         </div>
       </div> */}
+      <div className="dashgraphlinecont">
+        <h2 className="dashgraph__header">Gas Purchase in CO2e</h2>
+        <div className="dashgraphline__cont">
+          <Piegraph per1={13} name1="Gas Purchase" />
+        </div>
+      </div>
       <div className="dashgraphlinecont">
         <h2 className="dashgraph__header">Gas Purchase in CO2e</h2>
         <div className="dashgraphline__cont">

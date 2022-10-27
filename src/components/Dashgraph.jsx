@@ -4,6 +4,7 @@ import { chartarray } from "../sampledata/data";
 import { Areagraph } from "./Areagraph";
 import { Scatterchartgraph } from "./Scatterchart";
 import { color1 } from "../color";
+import { Piegraph } from "./Piegraph";
 export function Dashgraph() {
   return (
     <div className="dashgraphs">
@@ -11,6 +12,12 @@ export function Dashgraph() {
         <h2 className="dashgraph__header">Air Travel in CO2e</h2>
         <div className="dashgraphline__cont">
           <Linegraph vizarray={chartarray} colorvalue={color1} />
+        </div>
+      </div>
+      <div className="dashgraphlinecont">
+        <h2 className="dashgraph__header">Travel in CO2e</h2>
+        <div className="dashgraphline__cont">
+          <Piegraph per1={10} name1="Travel" />
         </div>
       </div>
       <div className="dashgraphbarcont">

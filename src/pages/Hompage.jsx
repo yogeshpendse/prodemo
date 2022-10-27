@@ -9,6 +9,7 @@ import { chartarray } from "../sampledata/data";
 import { Areagraphblock } from "../components/summary/Areagraphblock";
 import { Scattergraphblock } from "../components/summary/Scattergraphblock";
 import { color1, color2, color3 } from "../color";
+import { Piegraphsumblock } from "../components/Piegraphsum";
 export function Hompage() {
   const { dateval, setDateval, enddateval, setEnddateval } = useVisuals();
   return (
@@ -55,10 +56,9 @@ export function Hompage() {
               </div>
               <div className="summaryparam">
                 <p className="summaryparam__title">
-                  Total fuel
-                  <br /> scope
+                  Total fuel <br /> scope
                 </p>
-                <p className="summaryparam__value">1521.7 units </p>
+                <p className="summaryparam__value">1521.7 Liters </p>
               </div>
             </div>
             <div className="homevizgraph__cont">
@@ -68,26 +68,27 @@ export function Hompage() {
                   graphname={"Air Travel"}
                   colorvalue={color1}
                 />
+                <Piegraphsumblock />
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road Travel"}
                   colorvalue={color1}
                 />
-                <Linegraphblock
+                {/* <Linegraphblock
                   vizarray={chartarray}
                   graphname={"Air Cargo"}
                   colorvalue={color1}
-                />
+                /> */}
                 <Areagraphblock
                   vizarray={chartarray}
                   graphname={"Air Cargo"}
                   colorvalue={color1}
                 />
-                <Bargraphblock
+                {/* <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road Cargo"}
                   colorvalue={color1}
-                />
+                /> */}
                 <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Road Cargo"}
@@ -96,38 +97,38 @@ export function Hompage() {
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
-                  colorvalue={color1}
+                  colorvalue={color2}
                 />
-                <Areagraphblock
+                {/* <Areagraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
                   colorvalue={color1}
-                />
+                /> */}
                 <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Fuel"}
                   colorvalue={color2}
                 />
-                <Bargraphblock
+                {/* <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Fuel"}
                   colorvalue={color2}
-                />
+                /> */}
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
-                  colorvalue={color1}
+                  colorvalue={color3}
                 />
-                <Scattergraphblock
+                {/* <Scattergraphblock
                   vizarray={chartarray}
                   graphname={"Road commute"}
                   colorvalue={color1}
-                />
-                <Areagraphblock
+                /> */}
+                {/* <Areagraphblock
                   vizarray={chartarray}
                   graphname={"Electricity"}
                   colorvalue={color1}
-                />
+                /> */}
                 <Bargraphblock
                   vizarray={chartarray}
                   graphname={"(Scope 3) Fuel"}
@@ -141,7 +142,7 @@ export function Hompage() {
                 <Linegraphblock
                   vizarray={chartarray}
                   graphname={"Gas Purchase"}
-                  colorvalue={color2}
+                  colorvalue={color1}
                 />
               </div>
             </div>

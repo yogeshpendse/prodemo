@@ -5,6 +5,7 @@ import { Bargraph } from "./Bargraph";
 import { chartarray } from "../sampledata/data";
 import { Areagraph } from "./Areagraph";
 import { color1 } from "../color";
+import { Piegraph } from "./Piegraph";
 export function Dashgraphc() {
   // const { visualstate } = useVisuals();
   // console.log({ cargowale: visualstate.cargo });
@@ -14,6 +15,12 @@ export function Dashgraphc() {
         <h2 className="dashgraph__header">Air Cargo CO2e</h2>
         <div className="dashgraphline__cont">
           <Linegraph vizarray={chartarray} colorvalue={color1} />
+        </div>
+      </div>
+      <div className="dashgraphlinecont">
+        <h2 className="dashgraph__header">Cargo in CO2e</h2>
+        <div className="dashgraphline__cont">
+          <Piegraph per1={13} name1="Cargo" />
         </div>
       </div>
       <div className="dashgraphbarcont">

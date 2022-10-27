@@ -4,6 +4,7 @@ import { Bargraph } from "./Bargraph";
 import { chartarray } from "../sampledata/data";
 import { Areagraph } from "./Areagraph";
 import { color2 } from "../color";
+import { Piegraph } from "./Piegraph";
 export function Dashgrapf() {
   // const { visualstate } = useVisuals();
   return (
@@ -21,6 +22,12 @@ export function Dashgrapf() {
         <h2 className="dashgraph__header">Fuel in CO2e</h2>
         <div className="dashgraphbar__cont">
           <Bargraph vizarray={chartarray} colorvalue={color2} />
+        </div>
+      </div>
+      <div className="dashgraphlinecont">
+        <h2 className="dashgraph__header">Fuel in CO2e</h2>
+        <div className="dashgraphline__cont">
+          <Piegraph per1={22} name1="Fuel" />
         </div>
       </div>
       <div className="dashgraphlinecont">
