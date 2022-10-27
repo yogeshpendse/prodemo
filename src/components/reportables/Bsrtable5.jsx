@@ -21,20 +21,20 @@ export function Bsrtable5() {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total electricity consumption (A)</td>
-            <td className="bsr_td">650</td>
-            <td className="bsr_td">450</td>
+            <td className="bsr_td">586</td>
+            <td className="bsr_td">505</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total fuel consumption (B)</td>
-            <td className="bsr_td">850</td>
-            <td className="bsr_td">700</td>
+            <td className="bsr_td">878</td>
+            <td className="bsr_td">597</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total energy consumed from renewable so0urces (A+B+C)
             </td>
-            <td className="bsr_td">900</td>
-            <td className="bsr_td">450</td>
+            <td className="bsr_td">547</td>
+            <td className="bsr_td">510</td>
           </tr>
           <tr className="bsr_tr">
             <td colSpan={3} className="full_colspan">
@@ -43,8 +43,8 @@ export function Bsrtable5() {
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total electricity consumption (D)</td>
-            <td className="bsr_td">680</td>
-            <td className="bsr_td">600</td>
+            <td className="bsr_td">910</td>
+            <td className="bsr_td">668</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">Total fuel consumption (E)</td>
@@ -55,15 +55,15 @@ export function Bsrtable5() {
             <td className="bsr_td">
               Energy consumption through other sources (F)
             </td>
-            <td className="bsr_td">800</td>
-            <td className="bsr_td">600</td>
+            <td className="bsr_td">954</td>
+            <td className="bsr_td">904</td>
           </tr>
           <tr className="bsr_tr">
             <td className="bsr_td">
               Total energy consumed from non-renewable sources (D+E+F)
             </td>
-            <td className="bsr_td">700</td>
-            <td className="bsr_td">400</td>
+            <td className="bsr_td">815</td>
+            <td className="bsr_td">749</td>
           </tr>
         </tbody>
       </table>
