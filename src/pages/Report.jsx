@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import JsPDF from "jspdf";
 import { Lowsootfooter } from "../components/Lowsootfooter";
 import { Reportend } from "../components/Reportend";
@@ -11,6 +11,8 @@ import { Bsrtable5 } from "../components/reportables/Bsrtable5";
 import { Bsrtable6 } from "../components/reportables/Bsrtable6";
 import { Sidenavv3 } from "../components/sidenav/Sidenavv3";
 import { Topbarv3 } from "../components/topbar/Topbarv3";
+import { useVisuals } from "../contexts/Visualcontext";
+import { Steps } from "intro.js-react";
 
 export function Report() {
   const reportdata = {};
@@ -29,6 +31,23 @@ export function Report() {
       report.save("report.pdf");
     });
   };
+  const { enabledc, setEnabledc } = useVisuals();
+  const [enabled, setEnabled] = useState(true);
+
+  const onExit = () => {
+    setEnabled(false);
+    setEnabledc(false);
+  };
+  const onComplete = () => {
+    setEnabledc(false);
+  };
+  const steps = [
+    {
+      element: ".introjs__4",
+      intro: "This is a Report page with a comprehensive brsr report.",
+      // position: "right"
+    },
+  ];
 
   return (
     <div className="dcontainer">
@@ -36,7 +55,9 @@ export function Report() {
       <div className="reportmain">
         <Topbarv3 />
         <div className="reportmaincontent">
-          <h1 className="reportmainheader">Report</h1>
+          <h1 className="reportmainheader">
+            <span className="introjs__4">Report</span>
+          </h1>
           <div className="reportmaincont">
             <div ref={componentRef} id="report__datacontainer">
               <Reportmainhead />
@@ -53,6 +74,19 @@ export function Report() {
             <Reportend generatePDF={generatePDF} componentRef={componentRef} />
           </div>
         </div>
+        {/* enabledc && */}
+        {enabledc && (
+          <Steps
+            onComplete={onComplete}
+            enabled={enabled}
+            steps={steps}
+            // skipLabel={"skip"}
+            initialStep={0}
+            // skipLabel={true}
+            options={{ nextToDone: true }}
+            onExit={onExit}
+          />
+        )}
         <Lowsootfooter />
       </div>
     </div>

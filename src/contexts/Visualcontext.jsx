@@ -5,6 +5,7 @@ import { createContext, useContext } from "react";
 
 const Visualcontext = createContext();
 export function Visualsprov({ children }) {
+  const [enabledc, setEnabledc] = useState(true);
   function visualreducer(state, action) {
     switch (action.type) {
       case "SET_VISUALS":
@@ -56,6 +57,8 @@ export function Visualsprov({ children }) {
         setDateval,
         enddateval,
         setEnddateval,
+        enabledc,
+        setEnabledc,
       }}
     >
       {children}

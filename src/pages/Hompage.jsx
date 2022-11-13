@@ -10,15 +10,48 @@ import { Areagraphblock } from "../components/summary/Areagraphblock";
 import { Scattergraphblock } from "../components/summary/Scattergraphblock";
 import { color1, color2, color3 } from "../color";
 import { Piegraphsumblock } from "../components/Piegraphsum";
+import { useNavigate } from "react-router-dom";
+import { Steps } from "intro.js-react";
+import { useState } from "react";
+
 export function Hompage() {
-  const { dateval, setDateval, enddateval, setEnddateval } = useVisuals();
+  const {
+    dateval,
+    setDateval,
+    enddateval,
+    setEnddateval,
+    enabledc,
+    // setEnabled,
+  } = useVisuals();
+  const navigate = useNavigate();
+  const [enabled, setEnabled] = useState(true);
+  const onExit = () => {
+    setEnabled(false);
+  };
+  const onComplete = () => {
+    navigate("/visualization/travel");
+  };
+  const steps = [
+    {
+      element: ".introjs__1",
+      intro: "This is a summary page.",
+      // position: "right"
+    },
+    {
+      element: ".introjs__2",
+      intro: "This is sidebar for navigation.",
+      // position: "right"
+    },
+  ];
   return (
     <div className="dcontainer">
       <Sidenavv3 />
       <div className="homemainv2">
         <Topbarv3 />
         <div className="homemaincontentv2">
-          <h1 className="homemainheaderv2">Summary</h1>
+          <h1 id="introjs__1" className="homemainheaderv2">
+            <span className="introjs__1">Summary</span>
+          </h1>
           <div>
             <label>Start date:</label>
             <input
@@ -147,6 +180,18 @@ export function Hompage() {
               </div>
             </div>
           </>
+          {enabledc && (
+            <Steps
+              onComplete={onComplete}
+              enabled={enabled}
+              steps={steps}
+              // skipLabel={"skip"}
+              initialStep={0}
+              // skipLabel={true}
+              options={{ nextToDone: true }}
+              onExit={onExit}
+            />
+          )}
           <Lowsootfooter />
         </div>
       </div>

@@ -7,7 +7,7 @@ export function Sidenavv3() {
   const hoki = useLocation();
   return (
     <div className="sidenavv3__container">
-      <div className="sidenavv3">
+      <div className="sidenavv3 introjs__2">
         <div className="sidenavv3__logo">
           <div className="sidenavv3__logocont">
             <img
