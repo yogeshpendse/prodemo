@@ -13,6 +13,13 @@ import { Piegraphsumblock } from "../components/Piegraphsum";
 import { useNavigate } from "react-router-dom";
 import { Steps } from "intro.js-react";
 import { useState } from "react";
+import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
+import TextField from "@mui/material/TextField";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
+import { createMuiTheme, CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
 
 export function Hompage() {
   const {
@@ -43,6 +50,21 @@ export function Hompage() {
       // position: "right"
     },
   ];
+  const theme = createMuiTheme({
+    typography: {
+      htmlFontSize: 10,
+    },
+    overrides: {
+      MuiCssBaseline: {
+        "@global": {
+          html: {
+            fontSize: "62.5%",
+          },
+        },
+      },
+    },
+  });
+
   return (
     <div className="dcontainer">
       <Sidenavv3 />
@@ -52,24 +74,6 @@ export function Hompage() {
           <h1 id="introjs__1" className="homemainheaderv2">
             <span className="introjs__1">Summary</span>
           </h1>
-          <div>
-            <label>Start date:</label>
-            <input
-              value={dateval}
-              onChange={(e) => setDateval(e.target.value)}
-              type="date"
-              min="2022-01-01"
-              max="2022-12-29"
-            />
-            <label>End date:</label>
-            <input
-              value={enddateval}
-              onChange={(e) => setEnddateval(e.target.value)}
-              type="date"
-              min="2022-01-01"
-              max="2022-12-29"
-            />
-          </div>
           <>
             <Dashparameters />
             <div className="summaryparams">
@@ -94,6 +98,70 @@ export function Hompage() {
                 <p className="summaryparam__value">1521.7 Liters </p>
               </div>
             </div>
+            <div className="datefilters">
+              <h3 className="datefilters__head">Date Filters</h3>
+              <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <DesktopDatePicker
+                    minDate="2022-1-1"
+                    maxDate="2022-12-31"
+                    label="Start date"
+                    inputFormat="MM/DD/YYYY"
+                    value={dayjs(dateval)}
+                    onChange={(newValue) => {
+                      const monthkey = JSON.stringify(newValue["$M"] + 1);
+                      const monthkeystring =
+                        monthkey.length === 1 ? `0${monthkey}` : monthkey;
+                      setDateval(
+                        `${newValue["$y"]}-${monthkeystring}-${newValue["$D"]}`
+                      );
+                    }}
+                    renderInput={(params) => <TextField {...params} />}
+                  />
+                  &nbsp;&nbsp;&nbsp;
+                  <DesktopDatePicker
+                    minDate="2022-1-1"
+                    maxDate="2022-12-31"
+                    label="End date"
+                    inputFormat="MM/DD/YYYY"
+                    value={dayjs(enddateval)}
+                    onChange={(newValue) => {
+                      const monthkey = JSON.stringify(newValue["$M"] + 1);
+                      const monthkeystring =
+                        monthkey.length === 1 ? `0${monthkey}` : monthkey;
+                      setEnddateval(
+                        `${newValue["$y"]}-${monthkeystring}-${newValue["$D"]}`
+                      );
+                    }}
+                    renderInput={(params) => <TextField {...params} />}
+                  />
+                </LocalizationProvider>
+              </ThemeProvider>
+              {/* <label>Start date:</label>
+            <input
+              value={dateval}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setDateval(e.target.value);
+              }}
+              type="date"
+              min="2022-01-01"
+              max="2022-12-29"
+            /> */}
+              {/* <label>End date:</label>
+            <input
+              value={enddateval}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setEnddateval(e.target.value);
+              }}
+              type="date"
+              min="2022-01-01"
+              max="2022-12-29"
+            /> */}
+            </div>
+
             <div className="homevizgraph__cont">
               <div className="summarygrid">
                 <Linegraphblock
